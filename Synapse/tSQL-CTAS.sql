@@ -21,3 +21,7 @@ CREATE EXTERNAL TABLE { database_name.schema_name.table_name | schema_name.table
 column_name <data_type>
     [ COLLATE collation_name ]
     [ NULL | NOT NULL ]
+
+-- Simple CREATE TABLE Syntax (common if not using options)
+-- replace with the name of your external table
+CREATE TABLE AS SELECT * FROM  {database_name.schema_name.table_name | schema_name.table_name | table_name };
